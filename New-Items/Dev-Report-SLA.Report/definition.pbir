@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definitionProperties/2.0.0/schema.json",
+  "version": "4.0",
+  "datasetReference": {
+    "byConnection": {
+      "connectionString": "Data Source=powerbi://api.powerbi.com/v1.0/myorg/PROD_WS_R_CLINICAL;initial catalog=R_SRI_PEER_REVIEW;integrated security=ClaimsToken;semanticmodelid=3ef5bfc5-3e65-46b7-b96b-310441114833"
+    }
+  }
+}

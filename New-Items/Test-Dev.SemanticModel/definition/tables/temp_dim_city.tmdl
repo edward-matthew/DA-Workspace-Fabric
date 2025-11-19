@@ -1,0 +1,218 @@
+table temp_dim_city
+	lineageTag: 5645e89c-bdc9-46c4-b14c-d2715e05f441
+	sourceLineageTag: [dbo].[temp_dim_city]
+
+	column CityId
+		dataType: int64
+		formatString: 0
+		lineageTag: f8dbfb55-10b3-495f-8ee9-442d02595081
+		sourceLineageTag: CityId
+		summarizeBy: count
+		sourceColumn: CityId
+
+		annotation SummarizationSetBy = Automatic
+
+	column StateId
+		dataType: int64
+		formatString: 0
+		lineageTag: b5840ecd-6b72-4374-b141-ab6e6d8a8d9f
+		sourceLineageTag: StateId
+		summarizeBy: count
+		sourceColumn: StateId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		dataType: string
+		lineageTag: 66c0515d-2726-484e-a160-2077380409e6
+		sourceLineageTag: Code
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: cf2f6f5c-ed43-4853-9700-a3cb44191f03
+		sourceLineageTag: Name
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 922127ff-c0af-46e4-9c33-d728c6745fbf
+		sourceLineageTag: IsActive
+		summarizeBy: none
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 43680194-7238-4fa3-85ec-1b040a36a4c2
+		sourceLineageTag: CreateDate
+		summarizeBy: none
+		sourceColumn: CreateDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateUserId
+		dataType: int64
+		formatString: 0
+		lineageTag: e3b51990-cb9a-4583-9d2d-f3d304b86e25
+		sourceLineageTag: CreateUserId
+		summarizeBy: count
+		sourceColumn: CreateUserId
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateWorkstationId
+		dataType: int64
+		formatString: 0
+		lineageTag: 751452fc-b2e5-43a1-a23d-f259ccd6fa7a
+		sourceLineageTag: CreateWorkstationId
+		summarizeBy: count
+		sourceColumn: CreateWorkstationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5124fa5a-d400-4be1-b445-929bdb45a878
+		sourceLineageTag: UpdateDate
+		summarizeBy: none
+		sourceColumn: UpdateDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateUserId
+		dataType: int64
+		formatString: 0
+		lineageTag: 7bbc9450-386b-48c9-b8c1-e65856063b3c
+		sourceLineageTag: UpdateUserId
+		summarizeBy: count
+		sourceColumn: UpdateUserId
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateWorkstationId
+		dataType: int64
+		formatString: 0
+		lineageTag: 434ae7bb-0c4c-4d68-ab5a-889c637c7fc7
+		sourceLineageTag: UpdateWorkstationId
+		summarizeBy: count
+		sourceColumn: UpdateWorkstationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LockField
+		dataType: int64
+		formatString: 0
+		lineageTag: 81ce9b33-771f-48fb-af5e-9035c9c287dc
+		sourceLineageTag: LockField
+		summarizeBy: sum
+		sourceColumn: LockField
+
+		annotation SummarizationSetBy = Automatic
+
+	column RowVersion
+		dataType: int64
+		formatString: 0
+		lineageTag: a2a15493-ea80-4d5a-8a86-e0b4c57cbad5
+		sourceLineageTag: RowVersion
+		summarizeBy: sum
+		sourceColumn: RowVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column CentralVersion
+		dataType: int64
+		formatString: 0
+		lineageTag: 1eb950ad-7596-4298-9c99-6fbb2baeca40
+		sourceLineageTag: CentralVersion
+		summarizeBy: sum
+		sourceColumn: CentralVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column datalakeFilePath
+		dataType: string
+		lineageTag: de3d34f5-0e42-4178-9fb8-94467b9fbd1e
+		sourceLineageTag: datalakeFilePath
+		summarizeBy: none
+		sourceColumn: datalakeFilePath
+
+		annotation SummarizationSetBy = Automatic
+
+	column datalakeFileModificationTime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ba6d579e-962c-4760-b35c-f7823bfa885d
+		sourceLineageTag: datalakeFileModificationTime
+		summarizeBy: none
+		sourceColumn: datalakeFileModificationTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column datalakeTimestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6f7c7126-66c3-46b6-893e-c10b1ccdb8ec
+		sourceLineageTag: datalakeTimestamp
+		summarizeBy: none
+		sourceColumn: datalakeTimestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateDate_EST
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c242df7b-db63-4908-823c-edf942b66013
+		sourceLineageTag: CreateDate_EST
+		summarizeBy: none
+		sourceColumn: CreateDate_EST
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateDate_EST_to_UTC
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bfe22d67-11bd-47bd-800e-4685136ff9d6
+		sourceLineageTag: CreateDate_EST_to_UTC
+		summarizeBy: none
+		sourceColumn: CreateDate_EST_to_UTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateDate_EST
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9666bf18-3b47-4235-a644-582543d5e3fc
+		sourceLineageTag: UpdateDate_EST
+		summarizeBy: none
+		sourceColumn: UpdateDate_EST
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateDate_EST_to_UTC
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e3bf236b-3010-480a-a989-1a0e16654786
+		sourceLineageTag: UpdateDate_EST_to_UTC
+		summarizeBy: none
+		sourceColumn: UpdateDate_EST_to_UTC
+
+		annotation SummarizationSetBy = Automatic
+
+	partition temp_dim_city = entity
+		mode: directLake
+		source
+			entityName: temp_dim_city
+			schemaName: dbo
+			expressionSource: 'DirectLake - SILVER_LH_HIS_HIS'
+
