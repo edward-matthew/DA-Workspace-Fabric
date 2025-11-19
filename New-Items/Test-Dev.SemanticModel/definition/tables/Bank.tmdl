@@ -1,0 +1,168 @@
+table Bank
+	lineageTag: 9a7ed3b2-5116-4413-817f-d761a8c57fba
+	sourceLineageTag: [General].[Bank]
+
+	column BankId
+		dataType: int64
+		formatString: 0
+		lineageTag: d9b897b1-4173-41ad-aa7d-6e536b87818f
+		sourceLineageTag: BankId
+		summarizeBy: count
+		sourceColumn: BankId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Code
+		dataType: string
+		lineageTag: 004402b8-55ed-414f-98c1-0260be850902
+		sourceLineageTag: Code
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 825aebb6-4872-4cbf-899f-0d037b7f74fa
+		sourceLineageTag: Name
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7f3bfc20-1d26-4be0-a69c-0f712d016c99
+		sourceLineageTag: IsActive
+		summarizeBy: none
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ccac8515-f4aa-4c04-b992-448018630b7b
+		sourceLineageTag: CreateDate
+		summarizeBy: none
+		sourceColumn: CreateDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateUserId
+		dataType: int64
+		formatString: 0
+		lineageTag: f10643d4-a218-415e-8ab5-db8faeaa90e5
+		sourceLineageTag: CreateUserId
+		summarizeBy: count
+		sourceColumn: CreateUserId
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreateWorkstationId
+		dataType: int64
+		formatString: 0
+		lineageTag: 7fa1b13f-842b-442c-9fd6-fd97329f51d4
+		sourceLineageTag: CreateWorkstationId
+		summarizeBy: count
+		sourceColumn: CreateWorkstationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 8c6355a2-9ad1-422b-b44c-6344715ec0a9
+		sourceLineageTag: UpdateDate
+		summarizeBy: none
+		sourceColumn: UpdateDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateUserId
+		dataType: int64
+		formatString: 0
+		lineageTag: 19856a92-23ca-43c2-ab53-3d8c2d29d111
+		sourceLineageTag: UpdateUserId
+		summarizeBy: count
+		sourceColumn: UpdateUserId
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpdateWorkstationId
+		dataType: int64
+		formatString: 0
+		lineageTag: ba42a786-04b4-4497-ac03-91eaaee589a5
+		sourceLineageTag: UpdateWorkstationId
+		summarizeBy: count
+		sourceColumn: UpdateWorkstationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column LockField
+		dataType: int64
+		formatString: 0
+		lineageTag: bcb0b80d-61fb-4b6b-9da7-9f49273fe73c
+		sourceLineageTag: LockField
+		summarizeBy: sum
+		sourceColumn: LockField
+
+		annotation SummarizationSetBy = Automatic
+
+	column RowVersion
+		dataType: int64
+		formatString: 0
+		lineageTag: d26a5def-6d9d-43db-a1fd-ed04a9a59b34
+		sourceLineageTag: RowVersion
+		summarizeBy: sum
+		sourceColumn: RowVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column CentralVersion
+		dataType: int64
+		formatString: 0
+		lineageTag: 9d4e6feb-1f91-43c0-a7f9-6e92bf4eeaa2
+		sourceLineageTag: CentralVersion
+		summarizeBy: sum
+		sourceColumn: CentralVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column datalakeFilePath
+		dataType: string
+		lineageTag: 85c75437-cf5f-4f48-9033-52df09bf6030
+		sourceLineageTag: datalakeFilePath
+		summarizeBy: none
+		sourceColumn: datalakeFilePath
+
+		annotation SummarizationSetBy = Automatic
+
+	column datalakeFileModificationTime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d6633eb7-f2bf-446a-ab1d-6a46d4764f78
+		sourceLineageTag: datalakeFileModificationTime
+		summarizeBy: none
+		sourceColumn: datalakeFileModificationTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column datalakeTimestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3a543afd-b62d-41d4-929a-23191b5321a1
+		sourceLineageTag: datalakeTimestamp
+		summarizeBy: none
+		sourceColumn: datalakeTimestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Bank = entity
+		mode: directLake
+		source
+			entityName: Bank
+			schemaName: General
+			expressionSource: 'DirectLake - GOLD_LH_GLOBAL'
+
